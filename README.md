@@ -1,2 +1,2 @@
-# js-useful-examples
+# Useful Examples
 JavaScript Useful Examples
