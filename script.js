@@ -17,3 +17,18 @@ const res = Math.max.apply(Math, arr) // old
 const res = Math.max(...arr) // new
 
 console.log(res) // 3
+
+// find all names by given value
+
+const dict = {
+  duck: 'quack',
+  dog: 'wuff',
+  mouse: 'squeak',
+  hamster: 'squeak',
+}
+
+const res = Object.entries(dict)
+  .filter(([, value]) => value === 'squeak')
+  .map(([key]) => key)
+
+console.log(res) // ["mouse", "hamster"]
