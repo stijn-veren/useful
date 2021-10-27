@@ -8,3 +8,12 @@ const res = arr
   .reduce((max, value) => Math.max(max, value), 0)
 
 console.log(res) // 3
+
+// find the maximum number in an array of numbers
+
+const arr = [1, 2, 3]
+
+const res = Math.max.apply(Math, arr) // old
+const res = Math.max(...arr) // new
+
+console.log(res) // 3
