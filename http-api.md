@@ -13,3 +13,33 @@
 **Got:** https://www.npmjs.com/package/got
 
 **Reqwest:** https://www.npmjs.com/package/reqwest
+
+## Examples
+
+### Fetch API
+
+```javascript
+const source = 'https://swapi.dev/api/people/1/'
+
+// Get data with Fetch
+
+fetch(source)
+  .then((res) => {
+    return res.json()
+  })
+  .then((body) => {
+    console.log(body)
+  })
+
+// The same but using async/await
+
+const getResource = async (url) => {
+  const res = await fetch(url)
+  const body = await res.json()
+  return body
+}
+
+getResource(source).then((body) => {
+  console.log(body)
+})
+```
