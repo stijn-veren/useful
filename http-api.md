@@ -35,11 +35,20 @@ fetch(source)
 
 const getResource = async (url) => {
   const res = await fetch(url)
+
+  if (!res.ok) {
+    throw new Error(`received ${res.status}`)
+  }
+
   const body = await res.json()
   return body
 }
 
-getResource(source).then((body) => {
-  console.log(body)
-})
+getResource(source)
+  .then((body) => {
+    console.log(body)
+  })
+  .catch((err) => {
+    console.error('Could not fetch', err)
+  })
 ```
