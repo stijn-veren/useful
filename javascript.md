@@ -1,5 +1,8 @@
-// find the maximum odd number
+# JavaScript
 
+## find the maximum odd number
+
+```javascript
 const arr = ['1', '3', '2', '4']
 
 const res = arr
@@ -8,18 +11,22 @@ const res = arr
   .reduce((max, value) => Math.max(max, value), 0)
 
 console.log(res) // 3
+```
 
-// find the maximum number in an array of numbers
+## find the maximum number in an array of numbers
 
+```javascript
 const arr = [1, 2, 3]
 
 const res = Math.max.apply(Math, arr) // old
 const res = Math.max(...arr) // new
 
 console.log(res) // 3
+```
 
-// find all names by given value
+## find all names by given value
 
+```javascript
 const dict = {
   duck: 'quack',
   dog: 'wuff',
@@ -32,3 +39,4 @@ const res = Object.entries(dict)
   .map(([key]) => key)
 
 console.log(res) // ["mouse", "hamster"]
+```
