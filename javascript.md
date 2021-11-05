@@ -1,6 +1,6 @@
 # JavaScript
 
-## find the maximum odd number
+## Find the maximum odd number
 
 ```javascript
 const arr = ['1', '3', '2', '4']
@@ -13,7 +13,7 @@ const res = arr
 console.log(res) // 3
 ```
 
-## find the maximum number in an array of numbers
+## Find the maximum number in an array of numbers
 
 ```javascript
 const arr = [1, 2, 3]
@@ -24,7 +24,7 @@ const res = Math.max(...arr) // new
 console.log(res) // 3
 ```
 
-## find all names by given value
+## Find all names by given value
 
 ```javascript
 const dict = {
@@ -73,7 +73,7 @@ const isBrowser = typeof window === 'object' && typeof document === 'object';
 // Result: True or False
 ```
 
-### Get the Value of a Cookie
+## Get the Value of a Cookie
 
 ```
 const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift();
@@ -106,7 +106,7 @@ console.log(b)
 // Result: 1
 ```
 
-### Convert a String to a URL Slug
+## Convert a String to a URL Slug
 
 ```
 const slugify = string => string.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
