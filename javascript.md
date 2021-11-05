@@ -43,7 +43,7 @@ console.log(res) // ["mouse", "hamster"]
 
 ## Shuffle an Array
 
-```
+```javascript
 const shuffleArray = (arr) => arr.slice().sort(() => Math.random() - 0.5)
 console.log(shuffleArray([1, 2, 3, 4, 5, 6]))
 // Result: [6, 2, 3, 1, 5, 4]
@@ -51,7 +51,7 @@ console.log(shuffleArray([1, 2, 3, 4, 5, 6]))
 
 ## Throw a dice
 
-```
+```javascript
 const throwdice = () => ~~(Math.random() * 6) + 1;
 // Examples
 throwdice();    // Result: 4 
@@ -61,21 +61,21 @@ throwdice();    // Result: 6
 
 ## Detect Dark Mode
 
-```
+```javascript
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 // Result: True or False
 ```
 
 ## Check if Code is Running in the Browser
 
-```
+```javascript
 const isBrowser = typeof window === 'object' && typeof document === 'object';
 // Result: True or False
 ```
 
 ## Get the Value of a Cookie
 
-```
+```javascript
 const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift();
 cookie('_ga');      
 // Result: GA1.2.821239271.5181504719
@@ -85,7 +85,7 @@ cookie('lang');
 
 ## Create an Array of the Past Seven Days
 
-```
+```javascript
 const pastSevenDays = [...Array(7).keys()].map(days => new Date(Date.now() - 86400000 * days));
 console.log(pastSevenDays);
 // Result: [Array with 7 Date Objects]
@@ -96,7 +96,7 @@ console.log(comingSevenDays);
 
 ## Swap Two Variables
 
-```
+```javascript
 let a = 1
 let b = 2
 [a, b] = [b, a];
@@ -108,7 +108,7 @@ console.log(b)
 
 ## Convert a String to a URL Slug
 
-```
+```javascript
 const slugify = string => string.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 // Example
 slugify('Episode IV: A New Hope');    
@@ -117,7 +117,7 @@ slugify('Episode IV: A New Hope');
 
 ## Generate a Random Hex Color
 
-```
+```javascript
 const randomHexColor = () => '#' + (0x1000000 + Math.random() * 0xffffff).toString(16).slice(1, 6);
 randomHexColor() // Result: #fec150
 randomHexColor() // Result: #abba22
