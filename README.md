@@ -7,3 +7,5 @@
 **HTTP API:** https://github.com/stijn-veren/useful-examples/blob/main/http-api.md
 
 **Terminal:** https://github.com/stijn-veren/useful-examples/blob/main/terminal.md
+
+**JS Libs:** https://github.com/stijn-veren/useful-examples/blob/main/js-libs.md
